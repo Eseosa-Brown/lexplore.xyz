@@ -1,0 +1,77 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML -->
+<html lang="en"> <!-- Starts the HTML document and sets the language to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Defines the character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive for different screen sizes -->
+    <title>LExplore - Contact Us</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Links an external CSS file for styling -->
+</head>
+<body>
+    <header> <!-- Defines the header section of the page -->
+        <section class="container"> <!-- Container for header elements -->
+            <section class="logo"> <!-- Section for the logo -->
+                <a href="index.html"><img src="/images/lexplore.png" alt="LExplore Company Logo"></a> <!-- Clickable logo linking to the homepage -->
+            </section>
+            <section class="menu bar"> <!-- Section for the navigation menu -->
+                <input type="checkbox" id="menu-toggle" aria-label="Toggle Menu"> <!-- Checkbox for toggling the menu in mobile view -->
+                <label for="menu-toggle" class="menu-icon">☰</label> <!-- Label displaying a hamburger icon for mobile navigation -->
+                <nav> <!-- Navigation menu -->
+                    <ul> <!-- Unordered list for menu items -->
+                        <li><a href="#">Home</a></li> <!-- Active home link -->
+                        <li><a href="adventures.html">Adventures</a></li> <!-- Link to adventures page -->
+                        <li><a href="find-buddies.html">Find Buddies</a></li> <!-- Link to find buddies page -->
+                        <li><a href="about.html">About Us</a></li> <!-- Link to about us page -->
+                        <li><a href="contact.html">Contact Us</a></li> <!-- Link to contact us page -->
+                        <li><a href="login.html">Login</a></li> <!-- Link to login page -->
+                    </ul>
+                </nav>
+            </section>
+        </section>
+    </header>
+    <main> <!-- Main content section of the page -->
+        <section class="contact-form"> <!-- Contact form section -->
+            <h2>Contact Us</h2> <!-- Heading for the contact form -->
+            <form id="contact-form"> <!-- Contact form with a unique ID -->
+                <label for="name">Name:</label> <!-- Label for the name input field -->
+                <input type="text" id="name" name="name" required> <!-- Text input for name, required field -->
+                
+                <label for="email">Email:</label> <!-- Label for the email input field -->
+                <input type="email" id="email" name="email" required> <!-- Email input field, required field -->
+                
+                <label for="message">Message:</label> <!-- Label for the message textarea -->
+                <textarea id="message" name="message" required></textarea> <!-- Text area for user message, required field -->
+                
+                <button type="submit">Send Message</button> <!-- Submit button for the form -->
+            </form>
+        </section>
+        <section class="customer-support"> <!-- Customer support information section -->
+            <h2>Customer Support</h2> <!-- Heading for customer support section -->
+            <p>If you have any questions or need assistance, feel free to reach out to us:</p> <!-- Support message -->
+            <ul> <!-- Unordered list for contact details -->
+                <li>Email: <a href="mailto:support@lexplore.com">support@lexplore.com</a></li> <!-- Email contact link -->
+                <li>Phone: +1 (123) 456-7890</li> <!-- Phone number contact -->
+            </ul>
+        </section>
+        <section class="faq"> <!-- FAQ section -->
+            <h2>Frequently Asked Questions</h2> <!-- Heading for FAQ section -->
+            <div class="faq-item"> <!-- Individual FAQ item -->
+                <h3>How do I sign up for an adventure?</h3> <!-- Question -->
+                <p>You can sign up for an adventure by creating an account and browsing the available adventures on the Adventures page.</p> <!-- Answer -->
+            </div>
+            <div class="faq-item"> <!-- Another FAQ item -->
+                <h3>Can I cancel my booking?</h3> <!-- Question -->
+                <p>Yes, you can cancel your booking up to 7 days before the adventure start date. Please contact support for assistance.</p> <!-- Answer -->
+            </div>
+            <!-- Additional FAQ items can be added here -->
+        </section>
+    </main>
+    <footer> <!-- Footer section of the page -->
+        <p>&copy; 2025 LExplore. All rights reserved.</p> <!-- Copyright notice -->
+        <div class="social-links"> <!-- Section for social media links -->
+            <a href="#" aria-label="Visit our Facebook page">Facebook</a> <!-- Link to Facebook -->
+            <a href="#" aria-label="Visit our Twitter page">Twitter</a> <!-- Link to Twitter -->
+            <a href="#" aria-label="Visit our Instagram page">Instagram</a> <!-- Link to Instagram -->
+        </div>
+    </footer>
+</body>
+</html>

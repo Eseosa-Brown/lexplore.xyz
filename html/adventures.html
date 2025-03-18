@@ -1,0 +1,84 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML -->
+<html lang="en"> <!-- Begins the HTML document and sets language to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Specifies character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsiveness on different screen sizes -->
+    <title>LExplore - Adventures</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Links an external CSS file for styling -->
+</head>
+<body>
+    <header> <!-- Header section containing the website title and navigation menu -->
+        <section class="container"> <!-- Container for header elements, matches index.html structure -->
+            <section class="logo"> <!-- Logo section -->
+                <a href="index.html"><img src="/images/lexplore.png" alt="LExplore Company Logo"></a> <!-- Clickable logo linking to homepage -->
+            </section>
+            <section class="menu bar"> <!-- Navigation menu section -->
+                <input type="checkbox" id="menu-toggle" aria-label="Toggle Menu"> <!-- Checkbox for mobile menu toggle -->
+                <label for="menu-toggle" class="menu-icon">☰</label> <!-- Label displaying a hamburger icon for mobile navigation -->
+                <nav> <!-- Navigation menu -->
+                    <ul> <!-- Unordered list for navigation links -->
+                        <li><a href="index.html">Home</a></li> <!-- Link to Home page -->
+                        <li><a href="adventures.html">Adventures</a></li> <!-- Link to Adventures page -->
+                        <li><a href="find-buddies.html">Find Buddies</a></li> <!-- Link to Find Buddies page -->
+                        <li><a href="about.html">About Us</a></li> <!-- Link to About Us page -->
+                        <li><a href="contact.html">Contact Us</a></li> <!-- Link to Contact Us page -->
+                        <li><a href="login.html" class="active">Login</a></li> <!-- Link to Login page with active class highlighting current page -->
+                    </ul>
+                </nav>
+            </section>
+        </section>
+    </header>
+    <main> <!-- Main content section of the page -->
+        <section class="adventure-filters"> <!-- Section for adventure filters -->
+            <h2>Filter Adventures</h2> <!-- Heading for the filter section -->
+            <form id="filter-form"> <!-- Filter form with unique ID -->
+                <label for="category">Category:</label> <!-- Label for category dropdown -->
+                <select id="category" name="category"> <!-- Dropdown for adventure category selection -->
+                    <option value="all">All</option> <!-- Option for all categories -->
+                    <option value="hiking">Hiking</option> <!-- Option for hiking category -->
+                    <option value="camping">Camping</option> <!-- Option for camping category -->
+                    <option value="beach">Beach</option> <!-- Option for beach category -->
+                </select>
+                
+                <label for="location">Location:</label> <!-- Label for location input field -->
+                <input type="text" id="location" name="location"> <!-- Text input for location search -->
+                
+                <label for="difficulty">Difficulty:</label> <!-- Label for difficulty dropdown -->
+                <select id="difficulty" name="difficulty"> <!-- Dropdown for selecting difficulty level -->
+                    <option value="all">All</option> <!-- Option for all difficulty levels -->
+                    <option value="easy">Easy</option> <!-- Option for easy difficulty -->
+                    <option value="medium">Medium</option> <!-- Option for medium difficulty -->
+                    <option value="hard">Hard</option> <!-- Option for hard difficulty -->
+                </select>
+                
+                <button type="submit">Apply Filters</button> <!-- Button to submit filter selection -->
+            </form>
+        </section>
+        <section class="adventure-list"> <!-- Section containing list of adventures -->
+            <h2>Adventures</h2> <!-- Heading for the adventures list -->
+            <div class="adventure-card"> <!-- Individual adventure card -->
+                <img src="/images/adventure1.jpeg" alt="Beach Camping"> <!-- Image of the adventure -->
+                <h4>Beach Camping</h4> <!-- Title of the adventure -->
+                <p>Experience the serenity of the great outdoors with our camping adventure. Enjoy the fresh air, the
+                    sounds of nature, and the beauty of the wilderness while camping under the stars.</p> <!-- Short description of the adventure -->
+            </div>
+            <div class="adventure-card"> <!-- Another adventure card -->
+                <img src="/images/adventure2.jpg" alt="Kayaking"> <!-- Image of the adventure -->
+                <h4>Kayaking</h4> <!-- Title of the adventure -->
+                <p>Paddle through crystal-clear waters and experience the thrill of kayaking. Whether you're gliding
+                    through peaceful lakes, challenging river rapids, or exploring the open sea, kayaking is an
+                    adventure for all skill levels.</p> <!-- Short description of the adventure -->
+            </div>
+            <!-- Additional adventure cards can be added here -->
+        </section>
+    </main>
+    <footer> <!-- Footer section of the page -->
+        <p>&copy; 2025 LExplore. All rights reserved.</p> <!-- Copyright notice -->
+        <div class="social-links"> <!-- Section for social media links -->
+            <a href="#" aria-label="Visit our Facebook page">Facebook</a> <!-- Link to Facebook -->
+            <a href="#" aria-label="Visit our Twitter page">Twitter</a> <!-- Link to Twitter -->
+            <a href="#" aria-label="Visit our Instagram page">Instagram</a> <!-- Link to Instagram -->
+        </div>
+    </footer>
+</body>
+</html>

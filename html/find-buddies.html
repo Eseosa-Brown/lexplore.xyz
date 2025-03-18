@@ -1,0 +1,73 @@
+<!DOCTYPE html> <!-- Declares the document type as HTML -->
+<html lang="en"> <!-- Defines the HTML document with English language -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding to UTF-8 for international text support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper rendering on mobile devices -->
+    <title>LExplore - Find Buddies</title> <!-- Sets the title of the webpage -->
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Links to an external CSS file for styling -->
+</head>
+<body>
+    <header> <!-- Defines the header section of the page -->
+        <section class="container"> <!-- Container for header elements -->
+            <section class="logo"> <!-- Section for the logo -->
+                <a href="index.html"><img src="/images/lexplore.png" alt="LExplore Company Logo"></a> <!-- Clickable logo linking to the homepage -->
+            </section>
+            <section class="menu bar"> <!-- Section for the navigation menu -->
+                <input type="checkbox" id="menu-toggle" aria-label="Toggle Menu"> <!-- Checkbox for toggling the menu in mobile view -->
+                <label for="menu-toggle" class="menu-icon">&#9776;</label> <!-- Label displaying a hamburger icon for mobile navigation -->
+                <nav> <!-- Navigation menu -->
+                    <ul> <!-- Unordered list for menu items -->
+                        <li><a href="index.html">Home</a></li> <!-- Active home link -->
+                        <li><a href="adventures.html">Adventures</a></li> <!-- Link to adventures page -->
+                        <li><a href="find-buddies.html">Find Buddies</a></li> <!-- Link to find buddies page -->
+                        <li><a href="about.html">About Us</a></li> <!-- Link to about us page -->
+                        <li><a href="contact.html">Contact Us</a></li> <!-- Link to contact us page -->
+                        <li><a href="login.html">Login</a></li> <!-- Link to login page -->
+                    </ul>
+                </nav>
+            </section>
+        </section>
+    </header>
+    <main> <!-- Main content of the page -->
+        <section class="buddy-filters"> <!-- Section for filtering buddies -->
+            <h2>Find Travel Buddies</h2> <!-- Heading for the section -->
+            <form id="buddy-filter-form"> <!-- Form for filtering buddies -->
+                <label for="interests">Interests:</label> <!-- Label for interests input field -->
+                <input type="text" id="interests" name="interests"> <!-- Input field for entering interests -->
+                
+                <label for="destination">Destination:</label> <!-- Label for destination input field -->
+                <input type="text" id="destination" name="destination"> <!-- Input field for entering destination -->
+                
+                <label for="availability">Availability:</label> <!-- Label for availability input field -->
+                <input type="date" id="availability" name="availability"> <!-- Input field for selecting date -->
+                
+                <button type="submit">Search</button> <!-- Button to submit the filter form -->
+            </form>
+        </section>
+        <section class="buddy-list"> <!-- Section displaying potential buddies -->
+            <h2>Potential Buddies</h2> <!-- Heading for the section -->
+            <div class="buddy-card"> <!-- Card for a potential buddy -->
+                <img src="/images/buddy1.jpg" alt="Buddy 1"> <!-- Buddy profile image -->
+                <h4>Jane Doe</h4> <!-- Buddy name -->
+                <p>Interests: Hiking, Camping</p> <!-- Buddy interests -->
+                <button>Connect</button> <!-- Button to connect with the buddy -->
+            </div>
+            <div class="buddy-card"> <!-- Another card for a potential buddy -->
+                <img src="/images/buddy2.jpg" alt="Buddy 2"> <!-- Buddy profile image -->
+                <h4>John Smith</h4> <!-- Buddy name -->
+                <p>Interests: Beach, Surfing</p> <!-- Buddy interests -->
+                <button>Connect</button> <!-- Button to connect with the buddy -->
+            </div>
+            <!-- Add more buddy cards as needed -->
+        </section>
+    </main>
+    <footer> <!-- Footer section of the page -->
+        <p>&copy; 2025 LExplore. All rights reserved.</p> <!-- Copyright notice -->
+        <div class="social-links"> <!-- Section for social media links -->
+            <a href="#" aria-label="Visit our Facebook page">Facebook</a> <!-- Link to Facebook -->
+            <a href="#" aria-label="Visit our Twitter page">Twitter</a> <!-- Link to Twitter -->
+            <a href="#" aria-label="Visit our Instagram page">Instagram</a> <!-- Link to Instagram -->
+        </div>
+    </footer>
+</body>
+</html>

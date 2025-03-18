@@ -1,0 +1,368 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif; /* Set the default font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Ensure padding and border are included in element dimensions */
+    line-height: 1.6; /* Set line height for better readability */
+    background-color: #f4f4f4; /* Sets a light gray background */
+}
+
+/* Header Styles */
+header {
+    background-color: forestgreen; /* Set header background color */
+    color: white; /* Set header text color */
+    padding: 0.625rem; /* Add padding to the header */
+    width: 100%; /* Ensures full width */
+    text-align: center; /* Centers text */
+}
+
+h2, h3, p, ul, li, a{
+    text-align: center; /* Center-align text */
+    list-style: none; /* Removes bullet point from unordered list */
+}
+
+/* Container for logo and navigation */
+.container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    max-width: 75rem; /* Set maximum width for the container */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 1rem; /* Add horizontal padding */
+}
+
+/* Logo Styles */
+.logo img {
+    height: 12rem; /* Set logo height */
+}
+
+/* Hide the checkbox for menu toggle */
+#menu-toggle {
+    display: none; /* Hide the checkbox */
+}
+
+/* Menu Icon (Hamburger) Styles */
+.menu-icon {
+    display: block; /* Show the menu icon */
+    background: forestgreen; /* Set background color */
+    color: white; /* Set icon color */
+    padding: 0.625rem 0.9rem; /* Add padding */
+    font-size: 2rem; /* Set icon size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Navigation Menu Styles */
+nav ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    background: forestgreen; /* Set background color */
+    display: none; /* Hide the menu by default */
+    position: absolute; /* Position the menu absolutely */
+    top: 3.75rem; /* Position below the header */
+    right: 0.625rem; /* Align to the right */
+    width: 12.5rem; /* Set menu width */
+    text-align: center; /* Center-align menu items */
+}
+
+/* Navigation List Items */
+nav ul li {
+    margin: 0.625rem; /* Add margin between menu items */
+}
+
+/* Navigation Links */
+nav ul li a {
+    color: white; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make links block-level for full clickable area */
+    padding: 0.5rem 0.8rem; /* Add padding */
+}
+
+/* Show the menu when the checkbox is checked */
+#menu-toggle:checked ~ nav ul {
+    display: block; /* Display the menu */
+}
+
+/* Hero Section Styles */
+.hero {
+    background-color: gold; /* Set hero background color */
+    padding: 2rem; /* Add padding */
+    text-align: center; /* Center-align text */
+}
+
+/* Call-to-Action Button Styles */
+.cta-button {
+    background-color: forestgreen; /* Set button background color */
+    color: white; /* Set button text color */
+    padding: 0.5rem 1rem; /* Add padding */
+    text-decoration: none; /* Remove underline */
+    border-radius: 0.3125rem; /* Add rounded corners */
+    transition: background-color 0.3s ease; /* Add smooth hover transition */
+}
+
+/* Hover and Focus States for CTA Button */
+.cta-button:hover,
+.cta-button:focus {
+    background-color: darkgreen; /* Change background color on hover/focus */
+}
+
+/* Login and Registration Section Styles */
+.login-form, .registration-form {
+    background-color: white; /* Sets background to white */
+    padding: 2rem; /* Adds padding */
+    margin: 2rem auto; /* Centers the sections with margin */
+    max-width: 25rem; /* Limits width for better readability */
+    border-radius: 0.625rem; /* Adds rounded corners */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    text-align: center; /* Centers content */
+}
+
+/* Form Styles for Login and Registration */
+form {
+    display: flex; /* Uses flexbox */
+    flex-direction: column; /* Stacks elements vertically */
+    gap: 1rem; /* Add gap between grid items */
+    max-width: 25rem; /* Limits width for readability */
+    margin: auto; /* Centers the section */
+}
+
+label {
+    font-weight: bold; /* Makes labels bold */
+    margin-top: 0.625rem; /* Adds spacing above labels */
+}
+
+input {
+    padding: 0.625rem; /* Adds padding inside input fields */
+    margin-top: 0.3125rem; /* Adds spacing above inputs */
+    border: 0.0625rem solid grey; /* Adds a light border */
+    border-radius: 0.3125rem; /* Rounds input corners */
+    font-size: 1rem; /* Sets a standard font size */
+}
+
+button {
+    margin-top: 1rem; /* Adds space above the button */
+    padding: 0.625rem; /* Adds padding inside the button */
+    background-color: forestgreen; /* Sets button background color */
+    color: white; /* Sets text color to white */
+    border: none; /* Removes border */
+    border-radius: 0.3125rem; /* Rounds button corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 1rem; /* Sets a standard font size */
+}
+
+.buddy-card button:hover {
+    background-color: darkgreen; /* Changes background on hover for buddy card*/
+}
+
+.buddy-filters button:hover {
+    background-color: darkgreen; /* Changes background on hover for buddy filters */
+}
+
+.profile-details button:hover {
+    background-color: darkgreen; /* Changes background on hover profile button*/
+}
+
+/* Featured Adventures Section */
+.featured-adventures {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* Responsive grid columns */
+    gap: 1rem; /* Add gap between grid items */
+    padding: 2rem; /* Add padding */
+}
+
+/* Hover Effect for Cards */
+.saved-adventures,.adventure-card:hover {
+    transform: translateY(-0.3125rem); /* Move card up slightly on hover */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Image Styles in Cards */
+ .adventure-card img {
+    max-width: 100%; /* Ensure images don't overflow */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 0.625rem; /* Add rounded corners */
+}
+
+/* Adventure Page Styles */
+.adventure-filters, .buddy-filters {
+    background-color: white; /* Sets background to white */
+    padding: 2rem; /* Adds padding */
+    margin: 2rem auto; /* Centers the section */
+    max-width: 40rem; /* Limits width for readability */
+    border-radius: 0.625rem; /* Adds rounded corners */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    text-align: center; /* Centers content */
+}
+
+.adventure-filters form {
+    display: flex; /* Uses flexbox */
+    flex-direction: column; /* Stacks elements vertically */
+    gap: 1rem; /* Adds spacing between elements */
+}
+
+.adventure-filters label {
+    font-weight: bold; /* Makes labels bold */
+    text-align: left; /* Aligns labels to the left */
+}
+
+.adventure-filters select, .adventure-filters input {
+    padding: 0.625rem; /* Adds padding */
+    border: 0.0625rem solid #ccc; /* Adds a light border */
+    border-radius: 0.3125rem; /* Rounds input corners */
+    font-size: 1rem; /* Sets a standard font size */
+    width: 100%; /* Makes inputs take full width */
+}
+
+.adventure-filters button {
+    padding: 0.625rem; /* Adds padding inside the button */
+    background-color: forestgreen; /* Sets button background color */
+    color: white; /* Sets text color to white */
+    border: none; /* Removes border */
+    border-radius: 0.3125rem; /* Rounds button corners */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    font-size: 1rem; /* Sets a standard font size */
+    width: 100%; /* Makes button take full width */
+}
+
+.adventure-filters button:hover {
+    background-color: darkgreen; /* Changes background on hover */
+}
+
+.adventure-list {
+    display: grid; /* Uses CSS Grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsive grid columns */
+    gap: 1.5rem; /* Adds spacing between adventure cards */
+    padding: 2rem; /* Adds padding */
+    max-width: 60rem; /* Limits width */
+    margin: auto; /* Centers the section */
+}
+
+.mission img {
+    width: 100%; /* makes the image have its full width */
+    border-radius: 0.625rem;
+    margin-bottom: 1.25rem;
+}
+
+.mission, .profile .contact-form, .customer-support, .faq {
+    text-align: center; /* Centers text */
+    padding: 2rem; /* Adds padding around the section */
+    background-color: white; /* Sets background color */
+    margin: 2rem auto; /* Centers section with margin */
+    max-width: 50rem; /* Limits width for readability */
+    border-radius: 0.625rem; /* Adds rounded corners */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.team, .buddy-list {
+    display: flex; /* Uses flexbox for team layout */
+    flex-wrap: wrap; /* Allows wrapping of team members */
+    justify-content: center; /* Centers team members */
+    gap: 2rem; /* Adds space between team members */
+    padding: 2rem; /* Adds padding */
+    background-color: white; /* Sets background color */
+    margin: 2rem auto; /* Centers section */
+    max-width: 60rem; /* Sets a maximum width */
+    border-radius: 0.625rem; /* Adds rounded corners */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Adds shadow */
+}
+
+.team-member, .buddy-card{
+    text-align: center; /* Centers content */
+    max-width: 15rem; /* Limits width of each team member card */
+}
+
+/* Footer Styles */
+footer {
+    background-color: forestgreen; /* Set footer background color */
+    color: white; /* Set footer text color */
+    text-align: center; /* Center-align text */
+    padding: 1rem; /* Add padding */
+    margin-top: 2rem;/* Adds spacing above footer */
+    padding: 1rem; /* Adds padding */
+    width: 100%; /* Ensures footer spans full width */
+}
+
+
+
+/* Social Links in Footer */
+.social-links a {
+    color: white; /* Set link color */
+    margin: 0 0.5rem; /* Add horizontal margin */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Add hover transition */
+}
+
+/* Hover and Focus States for Social Links */
+.social-links a:hover,
+.social-links a:focus {
+    color: gold; /* Change link color on hover/focus */
+}
+
+
+.profile {
+    text-align: center; /* Centers text */
+    background-color: white; /* Sets background to white */
+    padding: 2rem; /* Adds padding */
+    margin: 2rem auto; /* Centers section with margin */
+    max-width: 40rem; /* Limits width for readability */
+    border-radius: 0.625rem; /* Adds rounded corners */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+.profile-details {
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Stacks elements vertically */
+    align-items: center; /* Centers content */
+    gap: 1rem; /* Adds space between elements */
+}
+
+.profile-details img, .team-member img, .buddy-card img {
+    width: 8rem; /* Sets profile picture size */
+    height: 8rem; /* Maintains aspect ratio */
+    border-radius: 50%; /* Creates a circular image */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Adds shadow */
+}
+
+/* Saved Adventures Section */
+.saved-adventures, .adventure-card  {
+    max-width: 50rem; /* Limits width */
+    margin: 2rem auto; /* Centers section */
+    padding: 2rem; /* Adds padding */
+    background-color: white; /* Sets background to white */
+    border-radius: 0.625rem; /* Adds rounded corners */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* Adds shadow */
+    text-align: center; /* Centers text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds hover effect */
+}
+
+/* Responsive Design for Larger Screens */
+@media (min-width: 48rem) { /* 768px */
+    .menu-icon {
+        display: none; /* Hide the menu icon on larger screens */
+    }
+
+    /* Navigation Menu for Larger Screens */
+    nav ul {
+        display: flex; /* Use flexbox for layout */
+        position: static; /* Reset position */
+        background: none; /* Remove background color */
+        width: auto; /* Reset width */
+        flex-direction: row; /* Align items horizontally */
+    }
+
+    /* Navigation List Items for Larger Screens */
+    nav ul li {
+        margin-left: 1.25rem; /* Add horizontal margin */
+    }
+
+    /* Hero Section for Larger Screens */
+    .hero {
+        padding: 4rem 2rem; /* Increase padding */
+    }
+
+    /* Grid Layout for Larger Screens */
+    .featured-adventures {
+        grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr)); /* Adjust grid columns */
+    }
+}

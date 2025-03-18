@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- Declares document as HTML5 -->
+<html lang="en"> <!-- Specifies language as English -->
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding for international support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the page responsive on different screen sizes -->
+    <meta name="description" content="LExplore - Connect and explore adventures worldwide."> <!-- Matches meta description from index.html -->
+    <title>LExplore - Login</title> <!-- Sets the page title -->
+    <link rel="stylesheet" href="/css/styles.css"> <!-- Matches stylesheet path from index.html -->
+</head>
+<body>
+    <header> <!-- Header section containing the website title and navigation menu -->
+        <section class="container"> <!-- Matches index.html structure -->
+            <section class="logo"> <!-- Logo section -->
+                <a href="index.html"><img src="/images/lexplore.png" alt="LExplore Company Logo"></a> <!-- Clickable logo linking to the homepage -->
+            </section>
+            <section class="menu bar"> <!-- Matches index.html navigation structure -->
+                <input type="checkbox" id="menu-toggle" aria-label="Toggle Menu"> <!-- Checkbox for mobile menu toggle -->
+                <label for="menu-toggle" class="menu-icon">☰</label> <!-- Hamburger icon for mobile navigation -->
+                <nav> <!-- Navigation menu -->
+                    <ul> <!-- Unordered list for navigation links -->
+                        <li><a href="index.html">Home</a></li> <!-- Link to Home page -->
+                        <li><a href="adventures.html">Adventures</a></li> <!-- Link to Adventures page -->
+                        <li><a href="find-buddies.html">Find Buddies</a></li> <!-- Link to Find Buddies page -->
+                        <li><a href="about.html">About Us</a></li> <!-- Link to About Us page -->
+                        <li><a href="contact.html">Contact Us</a></li> <!-- Link to Contact Us page -->
+                        <li><a href="login.html" class="active">Login</a></li> <!-- Added class to highlight active page -->
+                    </ul>
+                </nav>
+            </section>
+        </section>
+    </header>
+    
+    <main> <!-- Main content section -->
+        <section class="hero"> <!-- Added hero section for design consistency -->
+            <h2>Access Your Account</h2> <!-- Heading for login section -->
+            <p>Log in to plan your next adventure or sign up to join the community.</p> <!-- Brief description -->
+        </section>
+        
+        <section class="login-form"> <!-- Login form section -->
+            <h2>Login</h2> <!-- Heading for login form -->
+            <form id="login-form"> <!-- Form for user login -->
+                <label for="email">Email:</label> <!-- Label for email input field -->
+                <input type="email" id="email" name="email" required> <!-- Email input field with validation -->
+                
+                <label for="password">Password:</label> <!-- Label for password input field -->
+                <input type="password" id="password" name="password" required> <!-- Password input field with validation -->
+                
+                <button type="submit">Login</button> <!-- Submit button for login form -->
+                <p>Don't have an account? <a href="#registration-form">Sign up here</a></p> <!-- Link to sign-up section -->
+            </form>
+        </section>
+        
+        <section class="registration-form"> <!-- Registration form section -->
+            <h2>Sign Up</h2> <!-- Heading for sign-up form -->
+            <form id="registration-form"> <!-- Form for new user registration -->
+                <label for="username">Username:</label> <!-- Label for username input field -->
+                <input type="text" id="username" name="username" required minlength="3"> <!-- Username input field with minimum length validation -->
+                
+                <label for="email">Email:</label> <!-- Label for email input field -->
+                <input type="email" id="register-email" name="email" required> <!-- Email input field with validation -->
+                
+                <label for="password">Password:</label> <!-- Label for password input field -->
+                <input type="password" id="register-password" name="password" required minlength="8"> <!-- Password input field with minimum length validation -->
+                
+                <button type="submit">Sign Up</button> <!-- Submit button for registration form -->
+            </form>
+        </section>
+    </main>
+    
+    <footer> <!-- Footer section, matching index.html -->
+        <p>&copy; 2025 LExplore. All rights reserved.</p> <!-- Copyright notice -->
+        <div class="social-links"> <!-- Social media links for consistency -->
+            <a href="#" aria-label="Visit our Facebook page">Facebook</a> <!-- Link to Facebook page -->
+            <a href="#" aria-label="Visit our Twitter page">Twitter</a> <!-- Link to Twitter page -->
+            <a href="#" aria-label="Visit our Instagram page">Instagram</a> <!-- Link to Instagram page -->
+        </div>
+    </footer>
+</body>
+</html>
